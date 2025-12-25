@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="color:red;" data-createdby="Darsh">Hey I am box</div>
+        <div class="box">Hey I am box</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "fuck you <b>forever</b>";
+        // div.setAttribute("class","created")
+        // document.querySelector(".container").append(div);
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterbegin", '<div class="box">Hello, I am a new box!</div>');
+
+        let mean = document.createElement("div");
+        mean.setAttribute("style", "color:green")
+        mean.innerHTML = "I'm good as well"
+        document.querySelector(".container").append(mean)
+    </script>
+</body>
+</html>
